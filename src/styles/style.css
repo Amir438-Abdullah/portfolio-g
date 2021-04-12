@@ -1,0 +1,29 @@
+@tailwind base;
+
+
+
+body {
+  @apply bg-gradient-to-b bg-cover bg-no-repeat bg-opacity-50 from-purple-200 to-transparent text-white font-sans antialiased;
+  /* background: linear-gradient(180deg, #ffece1 50%, rgba(250, 250, 250, 0) 100%); */
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.container {
+  @apply .max-w-screen-xl .mx-auto .px-4;
+}
+
+@screen md {
+  .container {
+    @apply .px-6;
+  }
+}
+
+@screen lg {
+  .container {
+    @apply .px-8;
+  }
+}
+
