@@ -64,5 +64,12 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Poppins`, `source  \pro:400,500,800,900`],
+        display: "swap",
+      },
+    },
   ],
 }
