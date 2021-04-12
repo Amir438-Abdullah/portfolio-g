@@ -46,3 +46,7 @@ body {
   }
 }
 
+.btn {
+  @apply bg-purple-500 text-white rounded py-2 px-3  font-bold ;
+  box-shadow:0 5px 25px -5px rgba(204, 102, 255,0.5);
+}

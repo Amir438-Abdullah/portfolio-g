@@ -13,6 +13,8 @@ const IndexPage = ({ data }) => {
 
       <Hero />
 
+   
+
       {/* <div className="bg-gray-100 py-12 lg:py-16">
         {data.portfolio && data.portfolio.nodes.length > 0 ? (
           <Cards items={data.portfolio.nodes} />
