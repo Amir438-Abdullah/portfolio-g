@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import MenuMobile from "./MenuMobile"
 import { FaBars } from "react-icons/fa"
 import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa"
-import { FooterLink } from "./Footer"
+import { SocialLink } from "./Footer"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,7 +31,7 @@ const Header = () => {
     <div className="container   ">
       <div className="flex pb-3 pt-8 justify-between  items-center">
         <Link to="/" className="flex items-center">
-          <h3 className="font-pops font-bold text-xl text-gray-900">
+          <h3 className="font-pops font-extrabold uppercase tracking-tight  text-xl text-purple-800">
             Amir Razin
           </h3>
           <div className="status ml-3 bg-purple-300 font-pops bg-opacity-50 text-sm text-purple-500 font-medium p-1 px-2 rounded-full">
@@ -49,18 +49,18 @@ const Header = () => {
 
         <div className="hidden sm:block">
           <ul className="flex justify-center md:order-2">
-            <FooterLink href={links.twitter} icon={FaTwitter} label="Twitter" />
-            <FooterLink
+            <SocialLink href={links.twitter} icon={FaTwitter} label="Twitter" />
+            <SocialLink
               href={links.facebook}
               icon={FaFacebook}
               label="Facebook"
             />
-            <FooterLink
+            <SocialLink
               href={links.instagram}
               icon={FaInstagram}
               label="Instagram"
             />
-            <FooterLink
+            <SocialLink
               href={links.pinterest}
               icon={FaPinterest}
               label="Pinterest"

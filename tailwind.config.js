@@ -7,8 +7,8 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Inter var", "system-ui", "sans-serif"],
-      pops:["Poppins"]
-
+      pops: ["Poppins", "system-ui", "sans-serif"],
+      gil: ["Gilroy", "sans-serif"],
     },
   },
   variants: {

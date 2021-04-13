@@ -26,18 +26,18 @@ const Footer = () => {
     <div className="  bg-purple-200 ">
       <div className="container  py-12 md:flex md:items-center mt-auto md:justify-between">
         <ul className="flex justify-center md:order-2">
-          <FooterLink href={links.twitter} icon={FaTwitter} label="Twitter" />
-          <FooterLink
+          <SocialLink href={links.twitter} icon={FaTwitter} label="Twitter" />
+          <SocialLink
             href={links.facebook}
             icon={FaFacebook}
             label="Facebook"
           />
-          <FooterLink
+          <SocialLink
             href={links.instagram}
             icon={FaInstagram}
             label="Instagram"
           />
-          <FooterLink
+          <SocialLink
             href={links.pinterest}
             icon={FaPinterest}
             label="Pinterest"
@@ -53,7 +53,7 @@ const Footer = () => {
   )
 }
 
-export const FooterLink = ({ href, label, icon: Icon }) => {
+export const SocialLink = ({ href, label, icon: Icon }) => {
   return (
     <li className="inline-block pl-6">
       <a
