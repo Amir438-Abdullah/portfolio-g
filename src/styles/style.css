@@ -9,21 +9,17 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-FREE/Gilroy-Light.otf");
- 
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins/Poppins-Medium.ttf");
   font-weight: 500;
- 
 }
 
 ::selection {
-
   @apply bg-purple-600 text-white;
 }
-
 
 body {
   @apply bg-gradient-to-b font-pops bg-cover bg-no-repeat bg-opacity-50 from-purple-200 to-transparent   antialiased;
@@ -51,6 +47,16 @@ body {
 }
 
 .btn {
-  @apply bg-gradient-to-r from-purple-500 to-purple-700 text-white  py-2 px-3  font-bold ;
-  box-shadow:0 5px 25px -5px rgba(204, 102, 255,0.5);
+  @apply font-sans   py-3 uppercase tracking-wider px-8 font-semibold  text-sm transition-colors duration-300;
+  box-shadow: 0 5px 25px -10px rgba(204, 102, 255, 0.5);
+}
+
+
+.mainCloud {
+  position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%); /* This is a shorthand of
+                                       translateX(-50%) and translateY(-50%) */
 }
