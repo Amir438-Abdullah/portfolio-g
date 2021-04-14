@@ -43,7 +43,7 @@ const childrenVariants = {
   },
 }
 
-function Overlay({ children, isOpen, setIsOpen }) {
+export default function Overlay({ children, isOpen, setIsOpen }) {
   function closeOnEscapeKey(event) {
     if (event.keyCode === 27 && isOpen) {
       setIsOpen(false)
@@ -100,4 +100,4 @@ Overlay.propTypes = {
   setIsOpen: PropTypes.func.isRequired,
 }
 
-export default Overlay
+
