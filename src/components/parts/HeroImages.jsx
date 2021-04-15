@@ -2,6 +2,8 @@ import { motion } from "framer-motion"
 import React from "react"
 import Cloud from "../../images/cloud.svg"
 import MainCloud from "../../images/mainsvg.svg"
+import { StaticImage } from "gatsby-plugin-image"
+
 
 const CloudVariant = {
   move: {
@@ -13,10 +15,14 @@ const CloudVariant = {
 export default function HeroImages() {
   return (
     <>
-      <motion.img
-        src={MainCloud}
-        className="mainCloud  z-20 w-auto   "
-        alt=""
+      <StaticImage
+        src="../../images/main.png"
+        imgClassName=""
+        className="mainCloud z-20 sm:w-9/12  w-11/12"
+        loading="eager"
+        backgroundColor="transparent"
+        alt="mainCloud "
+        
       />
       <motion.img
         variants={CloudVariant}
