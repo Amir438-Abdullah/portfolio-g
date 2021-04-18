@@ -38,6 +38,7 @@ export default function HeroImages() {
         className="absolute top-0 w-32 right-0 md:mr-10 md:mt-10"
         alt=""
       />
+      
     </>
   )
 }

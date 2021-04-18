@@ -31,6 +31,12 @@
     "typeface-inter": "^3.12.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/react": "^6.2.8",
+    "babel-loader": "^8.2.2",
     "chalk": "^3.0.0",
     "contentful-import": "^7.7.13",
     "inquirer": "^7.1.0",
@@ -50,7 +56,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "setup": "node ./bin/setup.js",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
